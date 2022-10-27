@@ -1,0 +1,14 @@
+/* esconde o element html */
+.hide {
+  display: none;
+}
+/* mostra o elemento html */
+.show {
+  display: block;
+}
+
+#board {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
