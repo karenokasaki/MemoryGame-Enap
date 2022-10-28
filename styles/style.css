@@ -62,5 +62,5 @@
 
 /* esconde o element html */
 .hide {
-  display: none;
+  display: none !important;
 }
