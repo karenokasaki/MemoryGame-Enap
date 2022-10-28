@@ -100,6 +100,9 @@ class MemoryGame {
     if (this.points === 0) {
       console.log("Você perdeu por pontos");
       alert(`${this.player}, você não tem mais pontos! Tente novamente`);
+
+      const board = document.querySelector("#board");
+      board.classList.add("hide");
     }
 
     // ainda existem cartas para serem viradas -> ganhou
