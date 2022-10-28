@@ -1,14 +1,66 @@
-/* esconde o element html */
-.hide {
-  display: none;
-}
-/* mostra o elemento html */
-.show {
-  display: block;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
 }
 
 #board {
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
+}
+
+.startScreen {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.startScreen > h1 {
+  font-size: 3rem;
+  padding-bottom: 60px;
+}
+
+.startScreen > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+
+  border-radius: 18px;
+  background: #e0e0e0;
+  box-shadow: 8px 8px 5px #bebebe, -8px -8px 5px #ffffff;
+
+  padding: 40px;
+}
+
+#inputName {
+  width: 50vw;
+}
+
+#btnStart {
+  padding: 10px;
+  border-radius: 5px;
+  border: 0;
+  background-color: rgb(53, 53, 53);
+  color: white;
+}
+
+#btnStart:hover {
+  cursor: pointer;
+}
+
+/* mostra o elemento html */
+.show {
+  display: block;
+}
+
+/* esconde o element html */
+.hide {
+  display: none;
 }
